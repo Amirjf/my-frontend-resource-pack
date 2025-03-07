@@ -1,5 +1,5 @@
 {
-  "name": "@qualif/frontend",
+  "name": "@amirjf/frontend",
   "version": "0.1.0",
   "description": "Front-end UI components, utilities, and design system",
   "main": "dist/index.js",
@@ -32,7 +32,7 @@
     "typescript": "^5.8.2"
   },
   "publishConfig": {
-    "@qualif:registry": "https://gitlab.com/api/v4/projects/67788902/packages/npm/"
+    "@amirjf:registry": "https://gitlab.com/api/v4/projects/67788902/packages/npm/"
   },
   "repository": {
     "type": "git",
