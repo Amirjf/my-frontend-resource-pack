@@ -1,6 +1,6 @@
 {
   "name": "@amirjf/frontend",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Front-end UI components, utilities, and design system",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
