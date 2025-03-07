@@ -32,15 +32,6 @@ install_dependencies:
   tags:
     - group
 
-lint:
-  stage: test
-  script:
-    - npm run lint
-  dependencies:
-    - install_dependencies
-  tags:
-    - group
-
 build:
   stage: build
   script:
