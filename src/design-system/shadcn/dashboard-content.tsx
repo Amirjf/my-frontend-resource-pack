@@ -1,7 +1,7 @@
-import React, { FC, ReactNode } from 'react'
+import { FC, ReactNode } from 'react';
 
 interface Props {
-  children: ReactNode
+  children: ReactNode;
 }
 
 export const DashboardContent: FC<Props> = ({ children }) => {
@@ -9,5 +9,5 @@ export const DashboardContent: FC<Props> = ({ children }) => {
     <div className="flex-1 overflow-y-auto overflow-x-hidden bg-secondary/10 pb-1">
       {children}
     </div>
-  )
-}
+  );
+};
