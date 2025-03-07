@@ -31,7 +31,7 @@
     "typescript": "^5.8.2"
   },
   "publishConfig": {
-    "@qualif:registry": "https://gitlab.com/api/v4/projects/your-project-id/packages/npm/"
+    "@qualif:registry": "https://gitlab.com/api/v4/projects/67788902/packages/npm/"
   },
   "repository": {
     "type": "git",
