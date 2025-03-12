@@ -150,6 +150,9 @@ importers:
       '@types/react':
         specifier: ^19.0.10
         version: 19.0.10
+      esbuild-plugin-preserve-directives:
+        specifier: ^0.0.11
+        version: 0.0.11(esbuild@0.25.1)
       eslint:
         specifier: ^9.21.0
         version: 9.22.0
@@ -1418,6 +1421,12 @@ packages:
 
   emoji-regex@9.2.2:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==, tarball: https://registry.npmjs.org/emoji-regex/-/emoji-regex-9.2.2.tgz}
+
+  esbuild-plugin-preserve-directives@0.0.11:
+    resolution: {integrity: sha512-OolFhx1h/1ADEEoPjVi0hYWru1pTZBHki7XozawYVkhRhO63mwZT6isLylbwPs7dJ72doVQJGHCT2I1l9z8DcA==, tarball: https://registry.npmjs.org/esbuild-plugin-preserve-directives/-/esbuild-plugin-preserve-directives-0.0.11.tgz}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      esbuild: ^0.21.0
 
   esbuild@0.25.1:
     resolution: {integrity: sha512-BGO5LtrGC7vxnqucAe/rmvKdJllfGaYWdyABvyMoXQlfYMb2bbRuReWR5tEGE//4LcNJj9XrkovTqNYRFZHAMQ==, tarball: https://registry.npmjs.org/esbuild/-/esbuild-0.25.1.tgz}
@@ -3223,6 +3232,10 @@ snapshots:
   emoji-regex@8.0.0: {}
 
   emoji-regex@9.2.2: {}
+
+  esbuild-plugin-preserve-directives@0.0.11(esbuild@0.25.1):
+    dependencies:
+      esbuild: 0.25.1
 
   esbuild@0.25.1:
     optionalDependencies:
