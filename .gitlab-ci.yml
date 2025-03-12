@@ -1,5 +1,10 @@
 image: node:20.13.1-alpine3.20
 
+before_script:
+  - npm install -g pnpm
+  - pnpm config set @qualif:registry https://gitlab.com/api/v4/packages/npm/
+  - pnpm config set '//gitlab.com/api/v4/packages/npm/:_authToken' "${CI_JOB_TOKEN}"
+
 stages:
   - test
   - build
@@ -14,18 +19,15 @@ workflow:
     - if: $CI_COMMIT_REF_PROTECTED == "true"
 
 cache:
-  key:
-    files:
-      - package-lock.json
+  key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules/
-    - .npm/
-  policy: pull-push
+    - .pnpm-store
 
 install_dependencies:
   stage: test
   script:
-    - npm ci --legacy-peer-deps --cache .npm --prefer-offline
+    - pnpm install
   artifacts:
     paths:
       - node_modules/
@@ -35,7 +37,7 @@ install_dependencies:
 build:
   stage: build
   script:
-    - npm run build
+    - pnpm run build
   artifacts:
     paths:
       - dist/
@@ -49,7 +51,7 @@ publish:
   script:
     - test -n "$CI_JOB_TOKEN" || { echo "Missing CI_JOB_TOKEN"; exit 1; }
     - echo "//${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}" > .npmrc
-    - npm publish
+    - pnpm publish --no-git-checks
   dependencies:
     - build
   rules:
