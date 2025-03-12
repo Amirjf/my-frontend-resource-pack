@@ -1,6 +1,6 @@
 {
   "name": "@qualif/frontend",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Front-end UI components, utilities, and design system",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
