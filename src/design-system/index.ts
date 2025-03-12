@@ -1,3 +1,4 @@
+'use client';
 export * from './shadcn/accordion';
 export * from './shadcn/alert-dialog';
 export * from './shadcn/alert';
