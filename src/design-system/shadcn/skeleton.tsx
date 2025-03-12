@@ -1,4 +1,4 @@
-import { cn } from '@qualif/utils';
+import { cn } from '@org/utils';
 
 function Skeleton({
   className,

@@ -1,5 +1,5 @@
 import { type VariantProps, cva } from 'class-variance-authority';
-import { cn } from '@qualif/utils';
+import { cn } from '@org/utils';
 import { SearchIcon } from 'lucide-react';
 import { KBD } from './kbd';
 

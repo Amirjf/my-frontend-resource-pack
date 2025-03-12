@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 
-import { cn } from '@qualif/utils';
+import { cn } from '@org/utils';
 
 export type InputProps = React.ComponentProps<'input'>;
 

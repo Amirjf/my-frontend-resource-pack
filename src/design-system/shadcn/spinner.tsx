@@ -1,5 +1,5 @@
 import { Loader2 } from 'lucide-react';
-import { cn } from '@qualif/utils';
+import { cn } from '@org/utils';
 
 export const Spinner = ({ className }: { className?: string }) => {
   return (

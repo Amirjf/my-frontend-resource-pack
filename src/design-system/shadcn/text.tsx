@@ -1,6 +1,6 @@
 import { type VariantProps, cva } from 'class-variance-authority';
 import type { ElementType, ReactNode } from 'react';
-import { cn } from '@qualif/utils';
+import { cn } from '@org/utils';
 
 export type TextSize = 12 | 14 | 16 | 18 | 20 | 24 | 32 | 48 | 64;
 

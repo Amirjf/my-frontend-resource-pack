@@ -1,6 +1,6 @@
 'use client';
 
-import { useToast } from '@qualif/hooks';
+import { useToast } from '@org/hooks';
 import {
   Toast,
   ToastClose,
@@ -8,7 +8,7 @@ import {
   ToastProvider,
   ToastTitle,
   ToastViewport,
-} from '@qualif/components/ui';
+} from '@org/components/ui';
 
 export function Toaster() {
   const { toasts } = useToast();

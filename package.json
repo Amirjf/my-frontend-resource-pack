@@ -1,5 +1,5 @@
 {
-  "name": "@qualif/frontend",
+  "name": "@org/frontend",
   "version": "1.6.3",
   "description": "Front-end UI components, utilities, and design system",
   "main": "dist/index.js",
@@ -33,11 +33,11 @@
     "typescript": "^5.8.2"
   },
   "publishConfig": {
-    "@qualif:registry": "https://gitlab.com/api/v4/projects/67788902/packages/npm/"
+    "@org:registry": "https://gitlab.com/api/v4/projects/67788902/packages/npm/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/qualif-id1/boilerplate/frontend-resources.git"
+    "url": "git+https://gitlab.com/org-id1/boilerplate/frontend-resources.git"
   },
   "keywords": [
     "ui",

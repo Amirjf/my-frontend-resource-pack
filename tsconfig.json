@@ -24,9 +24,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@qualif/components/ui": ["./src/design-system/index.ts"],
-      "@qualif/hooks": ["./src/hooks/index.ts"],
-      "@qualif/utils": ["./src/utils/index.ts"]
+      "@org/components/ui": ["./src/design-system/index.ts"],
+      "@org/hooks": ["./src/hooks/index.ts"],
+      "@org/utils": ["./src/utils/index.ts"]
     }
   },
   "include": ["src"],
